@@ -1,4 +1,15 @@
-function Hello(){
-    return <h1> Hi from a component</h1>
+let name = "Bob";
+
+function displayMessage() {
+  return name + " Wow!";
 }
-export default Hello
+
+function Hello() {
+  return (
+    <div>
+      <h1> Hi from a component {displayMessage()} </h1>
+      <h1> Great!</h1>
+    </div>
+  );
+}
+export default Hello;
